@@ -1,5 +1,4 @@
 # Calculadora TK
-![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54) 
 
 A calculadora TK é um projeto de monitoria da disciplina de APC. A calculadora é desenvolvida em Python usando a biblioteca Tkinter, o que permite que ela seja executada em qualquer sistema operacional com Python instalado.
 
@@ -39,7 +38,7 @@ Certifique-se de ter o Python instalado em seu sistema para executar este códig
 
 ## Screenshots
 
-[Modo padrão](https://ibb.co/PWh0j3p) | [Modo científico](https://ibb.co/FBbmhM7)
+[Modo padrão]() | [Modo científico]()
 
 ## Contribuindo
 
