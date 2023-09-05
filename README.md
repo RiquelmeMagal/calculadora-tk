@@ -1,5 +1,7 @@
 # Calculadora TK
 
+
+
 A Calculadora TK é um projeto de monitoria da disciplina de APC que permite realizar cálculos matemáticos. Ela é desenvolvida em Python e Tkinter, o que a torna portátil e acessível a qualquer usuário.
 
 ## Monitores
@@ -31,7 +33,7 @@ A Calculadora TK é um projeto de monitoria da disciplina de APC que permite rea
 - Constante ``e`` (número de Euler)
 
 ### Modo Radiano e Grau
-A calculadora permite alternar entre os modos radiano (RAD) e grau (DEG) para os cálculos trigonométricos.
+A calculadora permite alternar entre os modos radiano ``RAD`` e grau ``DEG`` para os cálculos trigonométricos.
 
 ## Requisitos
 Certifique-se de ter o Python instalado em seu sistema para executar este código. O código utiliza a biblioteca Tkinter, que geralmente está incluída na instalação padrão do Python.
