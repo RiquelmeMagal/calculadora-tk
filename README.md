@@ -1,5 +1,6 @@
 # Calculadora TK
 
+
 A calculadora TK é um projeto de monitoria da disciplina de APC. A calculadora é desenvolvida em Python usando a biblioteca Tkinter, o que permite que ela seja executada em qualquer sistema operacional com Python instalado.
 
 ## Monitores
@@ -38,7 +39,7 @@ Certifique-se de ter o Python instalado em seu sistema para executar este códig
 
 ## Screenshots
 
-[Modo padrão]() | [Modo científico]()
+[Modo padrão](https://github.com/oaojcc/calculadora-tk/blob/main/Screenshots/modo%20padr%C3%A3o.PNG) | [Modo científico](https://github.com/oaojcc/calculadora-tk/blob/main/Screenshots/modo%20cient%C3%ADfico.PNG)
 
 ## Contribuindo
 
