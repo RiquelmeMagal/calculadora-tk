@@ -1,7 +1,6 @@
 # Calculadora TK
 
-
-A calculadora TK é um projeto de monitoria da disciplina de APC. A calculadora é desenvolvida em Python usando a biblioteca Tkinter, o que permite que ela seja executada em qualquer sistema operacional com Python instalado.
+A Calculadora TK é um projeto de monitoria da disciplina de APC que permite realizar cálculos matemáticos. Ela é desenvolvida em Python e Tkinter, o que a torna portátil e acessível a qualquer usuário.
 
 ## Monitores
 
