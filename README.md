@@ -54,6 +54,5 @@ Aqui estão algumas maneiras de contribuir para o projeto:
 
 - ``Crie um novo código``. Se você tem uma ideia para um novo recurso ou melhoria, crie um novo código e envie uma solicitação de pull.
 - ``Correção de erros.`` Se você encontrar um erro no código, crie uma solicitação de pull para corrigi-lo.
-- ``Melhorias``. Se você tiver ideias para melhorar o código existente, crie uma solicitação de pull para implementá-las.
 - ``Documentação.``A documentação é essencial para ajudar os usuários a entender o projeto. Se você tiver experiência em escrever documentação, considere contribuir com a documentação do projeto.
 - ``Testes.`` Os testes são essenciais para garantir que o código funcione corretamente. Se você tiver experiência em escrever testes, considere contribuir com os testes do projeto.
