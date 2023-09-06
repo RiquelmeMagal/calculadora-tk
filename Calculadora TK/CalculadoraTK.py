@@ -261,7 +261,7 @@ janela = Tk()
 # Define o título da janela como "Calculadora TK".
 janela.title('Calculadora TK')
 
-# Define o tamanho da janela para 388 pixels de largura e 560 pixels de altura.
+# Define o tamanho da janela para 388 pixels de largura e 574 pixels de altura.
 centralizar_janela(janela, 388, 574)
 
 # Define que a janela não poderá ser redimensionada pelo usuário
@@ -335,9 +335,8 @@ for caractere, posicao in caracteres.items():
             botao.configure(font=('Arial', 24, 'bold'))
     botao.grid(row=posicao[0], column=posicao[1], sticky=NSEW)
 
-# boão apagar e apagar último
+# boão apagar
 botao_apagar = criar_botao('C', command=lambda:limpar_display()).grid(row=0, column=1, sticky=NSEW)
-
 
 # boão igual
 botao_igual = criar_botao('=', command=lambda:calcular_expressao())
