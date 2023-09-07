@@ -24,11 +24,11 @@ def sair():
     if pergunta:
         janela.destroy()
 
-def formatar_numero(numero, comprimento=10):
+def formatar_numero(numero):
     """
     Formata um número para exibição, arredondando para até 10 casas decimais, se necessário.
     """
-    return round(numero, comprimento) if len(str(numero))  > comprimento else numero
+    return round(numero, 10) if len(str(numero))  > 10 else numero
         
 def obter_caractere(e):
     """
