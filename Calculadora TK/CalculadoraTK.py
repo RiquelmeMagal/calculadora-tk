@@ -55,25 +55,22 @@ def limpar_display():
     expressao_atual.set('')
 
 def tratar_expressao(expressao):
-    if 'e' in expressao:
-        expressao = expressao.replace('e', 'math.e')
-    if 'log' in expressao:
-        expressao = expressao.replace('log', 'math.log')
-    if 'sinh' in expressao:
-        expressao = expressao.replace('sinh', 'math.sinh')
-    if 'cosh' in expressao:
-        expressao = expressao.replace('cosh', 'math.cosh')
-    if 'tanh' in expressao:
-        expressao = expressao.replace('tanh', 'math.tanh')
-    if 'asin' in expressao:
-        expressao = expressao.replace('asin', 'math.asin')
-    if 'acos' in expressao:
-        expressao = expressao.replace('acos', 'math.acos')
-    if 'atan' in expressao:
-        expressao = expressao.replace('atan', 'math.atan')
-    if 'π' in expressao:
-        expressao = expressao.replace('π', 'math.pi')
-
+    """
+    Substitui os operadores e funções matemáticas pelos equivalentes da biblioteca math.
+    """
+    substituicoes = {
+        'e': 'math.e',
+        'log': 'math.log',
+        'sinh': 'math.sinh',
+        'cosh': 'math.cosh',
+        'tanh': 'math.tanh',
+        'asin': 'math.asin',
+        'acos': 'math.acos',
+        'atan': 'math.atan',
+        'π': 'math.pi'
+    }
+    for origem, destino in substituicoes.items():
+        expressao = expressao.replace(origem, destino)
     return expressao
 
 def sin():
