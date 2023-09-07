@@ -20,8 +20,7 @@ def sair():
     """
     Fecha a janela da instância do Tkinter com uma confirmação.
     """
-    pergunta = askyesno(title='Confirmação',
-                    message='Tem certeza de que deseja sair?')
+    pergunta = askyesno(title='Confirmação', message='Tem certeza de que deseja sair?')
     if pergunta:
         janela.destroy()
 
