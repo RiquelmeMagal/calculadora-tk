@@ -79,9 +79,9 @@ def sin():
         limpar_display()
 
         if rad:
-            obter_caractere(math.sin(math.radians(n)))
+            obter_caractere(formatar_numero(math.sin(math.radians(n))))
         else:
-            obter_caractere(math.sin(n))
+            obter_caractere(formatar_numero(math.sin(n)))
     except:
         pass
 
@@ -92,9 +92,9 @@ def cos():
         limpar_display()
 
         if rad:
-            obter_caractere(math.cos(math.radians(n)))
+            obter_caractere(formatar_numero(math.cos(math.radians(n))))
         else:
-            obter_caractere(math.cos(n))
+            obter_caractere(formatar_numero(math.cos(n)))
     except:
         pass
     
@@ -105,9 +105,9 @@ def tan():
         limpar_display()
 
         if rad:
-            obter_caractere(math.tan(math.radians(n)))
+            obter_caractere(formatar_numero(math.tan(math.radians(n))))
         else:
-            obter_caractere(math.tan(n))
+            obter_caractere(formatar_numero(math.tan(n)))
     except:
         pass
 
