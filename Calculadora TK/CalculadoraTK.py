@@ -8,7 +8,7 @@ import math
 
 
 acumulador = ''
-rad = True
+rad = modo_padrao = True
 
 def obter_caractere_teclado(evento):
     tecla_pressionada = evento.keysym
@@ -22,7 +22,7 @@ def obter_caractere_teclado(evento):
             obter_caractere(evento.char)
         case '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9':
             obter_caractere(evento.char) 
-            
+
 def callback(url):
     """
     Abre a URL fornecida no navegador padrão.
@@ -45,10 +45,15 @@ def formatar_numero(numero):
         
 def obter_caractere(e):
     """
-    Atualiza o acumulador e a expressão atual com um caractere fornecido.
+    Atualiza o acumulador e a expressão atual com um caractere fornecido de acordo com o modo da calculadora.
     """
-    global acumulador, expressao_atual, ultimo_caractere
-    acumulador += str(e)
+    global acumulador, expressao_atual, ultimo_caractere, modo_padrao
+
+    if modo_padrao and len(acumulador) < 10:
+        acumulador += str(e)
+    elif not modo_padrao and len(acumulador) < 17:
+        acumulador += str(e)
+
     expressao_atual.set(acumulador)
 
 def limpar_display():
@@ -162,7 +167,8 @@ def trocar_modo_rad_deg():
         rad = True
 
 def janela_modo_cientifico():
-    global texto_botao_rad_deg
+    global texto_botao_rad_deg, modo_padrao
+    modo_padrao = False
 
     janela.geometry('647x574')
 
@@ -189,6 +195,9 @@ def janela_modo_cientifico():
     botao_rad_deg.grid(row=0, column=6, sticky=NSEW, columnspan=2)
 
 def janela_modo_default():
+    global modo_padrao
+
+    modo_padrao = True
     janela.geometry('388x574')
 
 def centralizar_janela(root_, width_, height_):
@@ -279,7 +288,7 @@ frame_display.pack(fill=BOTH)
 texto_display = Entry(frame_display, textvariable=expressao_atual, background='#f5f5f5', font=('Arial', 50, 'bold'), state=DISABLED, borderwidth=9, justify=RIGHT)
 texto_display.pack(side=RIGHT)
 
-frame_botao = Frame(janela, background='black')
+frame_botao = Frame(janela)
 
 frame_botao.pack(fill=BOTH)
 
