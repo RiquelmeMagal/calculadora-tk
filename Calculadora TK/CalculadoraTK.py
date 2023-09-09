@@ -10,6 +10,19 @@ import math
 acumulador = ''
 rad = True
 
+def obter_caractere_teclado(evento):
+    tecla_pressionada = evento.keysym
+
+    match tecla_pressionada:
+        case 'Return' | 'equal':
+            calcular_expressao()
+        case 'BackSpace':
+            limpar_display()
+        case 'plus'|'minus'| 'asterisk'| 'slash'| 'period'| 'parenleft'| 'parenright'| 'percent':
+            obter_caractere(evento.char)
+        case '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9':
+            obter_caractere(evento.char) 
+            
 def callback(url):
     """
     Abre a URL fornecida no navegador padrão.
@@ -235,6 +248,7 @@ janela.title('Calculadora TK')
 centralizar_janela(janela, 388, 574)
 janela.resizable(0, 0)
 janela.wm_attributes('-topmost', True)
+janela.bind('<Key>', obter_caractere_teclado)
 
 expressao_atual = StringVar()
 texto_botao_rad_deg = StringVar(value='RAD')
