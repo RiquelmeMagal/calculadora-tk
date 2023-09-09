@@ -1,4 +1,3 @@
-# Importação dos módulos necessários
 from tkinter import *
 from tkinter import Menu
 from tkinter.messagebox import showerror 
