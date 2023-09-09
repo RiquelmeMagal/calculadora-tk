@@ -46,7 +46,7 @@ def obter_caractere(e):
     """
     Atualiza o acumulador e a expressão atual com um caractere fornecido de acordo com o modo da calculadora.
     """
-    global acumulador, expressao_atual, ultimo_caractere, modo_padrao
+    global acumulador, expressao_atual, modo_padrao
 
     if modo_padrao and len(acumulador) < 10:
         acumulador += str(e)
