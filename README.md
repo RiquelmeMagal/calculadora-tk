@@ -37,7 +37,7 @@ Necessário ter o python na versão 3.10 ou posterior.
 A calculadora permite alternar entre os modos radiano ``RAD`` e grau ``DEG`` para os cálculos trigonométricos.
 
 ### Eventos do teclado
-A calculadora consegue lidar com o teclado inserindo os caracteres correspondentes no display.
+A Calculadora tem a capacidade de lidar com o teclado, inserindo os caracteres correspondentes no display.
 
 ## Requisitos
 Certifique-se de ter o Python instalado em seu sistema para executar este código. O código utiliza a biblioteca Tkinter, que geralmente está incluída na instalação padrão do Python.
