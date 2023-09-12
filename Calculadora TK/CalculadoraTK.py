@@ -213,6 +213,9 @@ def janela_modo_cientifico():
     botao_rad_deg.grid(row=0, column=6, sticky=NSEW, columnspan=2)
 
 def janela_modo_default():
+    """
+    Altera a janela para o modo padrão, modificando a geometria.
+    """
     global modo_padrao
 
     modo_padrao = True
