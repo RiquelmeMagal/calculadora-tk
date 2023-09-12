@@ -144,6 +144,9 @@ def calcular_expressao():
             limpar_display()
 
 def criar_botao(text='', command=None):
+    """
+    Cria um botão personalizado para uma interface gráfica.
+    """
     botao = Button(frame_botao, 
                    text=text, 
                    background='#ffffff', 
