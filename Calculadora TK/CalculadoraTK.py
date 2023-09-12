@@ -233,6 +233,9 @@ def centralizar_janela(root_, width_, height_):
     root_.geometry(f'{width_}x{height_}+{pos_x}+{pos_y}')
 
 def janela_sobre():
+    """
+    Abre uma janela "Sobre" com informações sobre o programa e equipe de desenvolvimento.
+    """
     janela_sobre = Toplevel(janela)
 
     centralizar_janela(janela_sobre, 385, 202)
@@ -254,27 +257,27 @@ def janela_sobre():
                             text='Universidade Federal de Alagoas - UFAL', 
                             font=('Arial', 10)).place(x=0, y=45)
 
-    label_course_name = Label(janela_sobre, 
+    label_nome_curso = Label(janela_sobre, 
                             text='Curso de Ciência da Computação', 
                             font=('Arial', 10)).place(x=0, y=65) 
 
-    label_project = Label(janela_sobre, 
+    label_projeto = Label(janela_sobre, 
                             text='Projeto de monitoria da disciplina APC', 
                             font=('Arial', 10)).place(x=0, y=105) 
     
-    label_teaching_assistants = Label(janela_sobre, 
+    label_monitores = Label(janela_sobre, 
                             text='Monitores: João V. V. Santos, Riquelme Magalhães de Souza', 
                             font=('Arial', 10)).place(x=0, y=125) 
     
-    label_teacher = Label(janela_sobre, 
+    label_professor = Label(janela_sobre, 
                             text='Docentes: Alexandre de Andrade Barbosa, Rodolfo C. Cavalcante', 
                             font=('Arial', 10)).place(x=0, y=145)
 
-    label_repository = Label(janela_sobre, 
+    label_repositorio = Label(janela_sobre, 
                     text='Código fonte', 
                     font=('Arial', 10, 'bold'), foreground='blue', cursor='hand2') 
-    label_repository.bind("<Button-1>", lambda e: callback('https://github.com/oaojcc/calculadora-tk'))
-    label_repository.place(x=0, y=175)
+    label_repositorio.bind("<Button-1>", lambda e: callback('https://github.com/oaojcc/calculadora-tk'))
+    label_repositorio.place(x=0, y=175)
 
 janela = Tk()
 janela.title('Calculadora TK')
