@@ -160,6 +160,9 @@ def criar_botao(text='', command=None):
     return botao
 
 def trocar_modo_rad_deg():
+    """
+    Alterna entre os modos de radiano (RAD) e grau (DEG).
+    """
     global rad, texto_botao_rad_deg
 
     if rad:
