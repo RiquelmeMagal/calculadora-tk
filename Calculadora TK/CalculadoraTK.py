@@ -222,12 +222,15 @@ def janela_modo_default():
     janela.geometry('388x574')
 
 def centralizar_janela(root_, width_, height_):
-        screen_width = root_.winfo_screenwidth()
-        screen_height = root_.winfo_screenheight()
-        pos_x = screen_width // 2 - width_ // 2
-        pos_y = screen_height // 2 - height_ // 2
+    """
+    Centraliza uma janela na tela com base nas dimensões especificadas.
+    """
+    screen_width = root_.winfo_screenwidth()
+    screen_height = root_.winfo_screenheight()
+    pos_x = screen_width // 2 - width_ // 2
+    pos_y = screen_height // 2 - height_ // 2
 
-        root_.geometry(f'{width_}x{height_}+{pos_x}+{pos_y}')
+    root_.geometry(f'{width_}x{height_}+{pos_x}+{pos_y}')
 
 def janela_sobre():
     janela_sobre = Toplevel(janela)
