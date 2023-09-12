@@ -182,6 +182,9 @@ def trocar_modo_rad_deg():
         rad = True
 
 def janela_modo_cientifico():
+    """
+    Altera a janela para o modo científico, modificando a geometria e adicionando botões científicos.
+    """
     global texto_botao_rad_deg, modo_padrao
     modo_padrao = False
 
