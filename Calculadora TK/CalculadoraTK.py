@@ -10,6 +10,9 @@ acumulador = ''
 rad = modo_padrao = True
 
 def obter_caractere_teclado(evento):
+    """
+    Processa eventos de teclado e executa ações correspondentes com base na tecla pressionada.
+    """
     tecla_pressionada = evento.keysym
 
     match tecla_pressionada:
