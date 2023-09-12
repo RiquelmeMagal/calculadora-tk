@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import Menu
 from tkinter.messagebox import showerror 
+from tkinter.messagebox import askyesno
 from webbrowser import open_new
-from  tkinter.messagebox import askyesno
 import math
 
 
