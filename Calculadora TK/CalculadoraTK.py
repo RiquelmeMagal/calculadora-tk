@@ -84,6 +84,9 @@ def tratar_expressao(expressao):
     return expressao
 
 def sin():
+    """
+    Calcula a seno de um número armazenado no acumulador.
+    """
     global acumulador
     try:
         n = float(acumulador)
@@ -97,6 +100,9 @@ def sin():
         pass
 
 def cos():
+    """
+    Calcula a cosseno de um número armazenado no acumulador.
+    """
     global acumulador
     try:
         n = float(acumulador)
@@ -110,6 +116,9 @@ def cos():
         pass
     
 def tan():
+    """
+    Calcula a tangente de um número armazenado no acumulador.
+    """
     global acumulador
     try:
         n = float(acumulador)
