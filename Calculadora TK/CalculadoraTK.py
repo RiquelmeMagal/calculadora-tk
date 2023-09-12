@@ -17,10 +17,8 @@ def obter_caractere_teclado(evento):
             calcular_expressao()
         case 'BackSpace':
             limpar_display()
-        case 'plus'|'minus'| 'asterisk'| 'slash'| 'period'| 'parenleft'| 'parenright':
+        case 'plus'|'minus'| 'asterisk'| 'slash'| 'period'| 'parenleft'| 'parenright' | '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9':
             obter_caractere(evento.char)
-        case '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9':
-            obter_caractere(evento.char) 
 
 def callback(url):
     """
