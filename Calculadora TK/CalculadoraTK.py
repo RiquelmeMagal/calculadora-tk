@@ -282,7 +282,7 @@ def janela_sobre():
 janela = Tk()
 janela.title('Calculadora TK')
 centralizar_janela(janela, 388, 574)
-janela.resizable(0, 0)
+janela.resizable(False, False)
 janela.wm_attributes('-topmost', True)
 janela.bind('<Key>', obter_caractere_teclado)
 
@@ -290,8 +290,8 @@ expressao_atual = StringVar()
 texto_botao_rad_deg = StringVar(value='RAD')
 
 menubar = Menu(janela)
-menu_opt = Menu(menubar, tearoff=FALSE)
-sub_menu = Menu(menu_opt, tearoff=0)
+menu_opt = Menu(menubar, tearoff=False)
+sub_menu = Menu(menu_opt, tearoff=False)
 sub_menu.add_command(label='Padrão', command=lambda:janela_modo_default()) 
 sub_menu.add_command(label='Científica', command=lambda:janela_modo_cientifico()) 
 
@@ -303,7 +303,7 @@ menu_opt.add_cascade(
 menu_opt.add_separator()
 menu_opt.add_command(label='Sair', command=lambda:sair())
 menubar.add_cascade(label='Opções', menu=menu_opt)
-menu_sobre = Menu(menubar, tearoff=FALSE)
+menu_sobre = Menu(menubar, tearoff=False)
 menu_sobre.add_command(label='Sobre a Calculadora TK', command=lambda:janela_sobre())
 menubar.add_cascade(label='Ajuda', menu=menu_sobre)
 
