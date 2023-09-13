@@ -85,7 +85,7 @@ def tratar_expressao(expressao):
 
 def sin():
     """
-    Calcula a seno de um número armazenado no acumulador.
+    Calcula o seno de um número armazenado no acumulador.
     """
     global acumulador
     try:
@@ -101,7 +101,7 @@ def sin():
 
 def cos():
     """
-    Calcula a cosseno de um número armazenado no acumulador.
+    Calcula o cosseno de um número armazenado no acumulador.
     """
     global acumulador
     try:
