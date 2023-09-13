@@ -65,4 +65,3 @@ Aqui estão algumas maneiras de contribuir para o projeto:
 - ``Correção de erros.`` Se você encontrar um erro no código, crie uma solicitação de pull para corrigi-lo.
 - ``Documentação.``A documentação é essencial para ajudar os usuários a entender o projeto. Se você tiver experiência em escrever documentação, considere contribuir com a documentação do projeto.
 - ``Testes.`` Os testes são essenciais para garantir que o código funcione corretamente. Se você tiver experiência em escrever testes, considere contribuir com os testes do projeto.
-
